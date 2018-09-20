@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100%;
+}
+
+html{
+  height: 100%;
+}
+
+/*This takes care of the header */
+header {
+	background-color: #b2b2b2;
+	color: tomato;
+	padding: 4px;
+}
+/* This affects all h1 selector*/
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+/* This affects all h2 selector*/
+h2 {
+    margin: 1em 0 0.25em;
+    color: tomato;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+  text-align: center;
+}
+
+.wrapper > * {
+	padding: 10px;
+}
+
+/* This takes care of the tool section of the HTML code*/
+.tools {
+	background-color: #e6e6fa;
+	flex-basis: 200px;
+	text-align: right;
+}
+
+#sizePicker > *,
+
+.tools > * {
+	margin-bottom: 15px;
+}
+
+/* This takes care of the grid section in the HTML code*/
+.canvas {
+    background-color: lightgrey;
+    width:85%;
+
+}
+
+/* This takes care h2 selector in the grid section in the HTML code*/
+.canvas h2 {
+  text-align: center;
+}
+
+
+table,
+tr,
+td {
+    border: 1px solid tomato;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+
+
+input[type="number"],
+input[type="submit"] {
+    padding: 2px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <!--This is the header-->
+  <header>
+    <h1>Lab: Pixel Art Maker</h1>
+  </header>
+  <!--end of header-->
+
+  <!--This wrapper container encompasses other divs-->
+  <div class="wrapper">
+<!--begining of tools container-->
+  <div class="tools">
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWeight" name="width" min="1" value="1">
+        <input type="submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+</div>
+ <!--end of tools container-->
+
+<!--begining of canvas container-->
+<div class="canvas">
+<h2>Design Canvas</h2>
+<br><br>
+    <table id="pixelCanvas"></table>
+  </div>
+  <!--end of canvas container-->
+</div>
+<!--end of wrapper container-->
+
+    <script src="designs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
